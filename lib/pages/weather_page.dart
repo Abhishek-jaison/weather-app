@@ -35,7 +35,7 @@ class _WeatherPageState extends State<WeatherPage> {
 
 String getWeatherAnimation(String? maincondition){
   if(maincondition == null)
-  return 'assets/sunny.json';
+    return 'assets/sunny.json';
 
   switch(maincondition.toLowerCase()){
     case 'clouds':
@@ -68,7 +68,7 @@ String getWeatherAnimation(String? maincondition){
   }
 
 
-
+@override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[800],
